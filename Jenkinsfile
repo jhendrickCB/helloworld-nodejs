@@ -24,6 +24,7 @@ pipeline {
         always { 
             echo 'Send a slack message or email'
         }
+      }
     }
     stage('Build and Push Image') {
       when {
