@@ -17,6 +17,7 @@ pipeline {
         container('nodejs') {
           echo 'Hello World!'   
           sh 'node --version'
+          checkpoint
         }
       }
     }
