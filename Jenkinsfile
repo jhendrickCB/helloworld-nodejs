@@ -28,6 +28,7 @@ pipeline {
       }
       steps {
         echo "TODO - build and push image"
+        publishEvent simpleEvent('hello-api-deploy-event')
       }
     }
   }
